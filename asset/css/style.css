@@ -1,0 +1,189 @@
+body{
+	font-family: rale;
+	margin:0;
+}
+.container{
+    width: 75%;
+    max-height: 50px;
+    margin: 0 auto;
+}
+.header{
+	left: 0;
+	top: 0;
+	right: 0;
+	background: Brown;
+}
+.header a{
+	color: white;
+	text-decoration: none;
+	padding: 2rem 0;
+}
+.menu{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo2{
+	font-size: 1.5rem;
+}
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+} 
+.navigation ul li{
+	display: inline-block;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 1rem;
+}
+.navigation ul li a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+
+h1 {
+	font-family: arial;
+	font-size: 45px; 
+	color: white;
+}
+iframe {
+	float: left;
+	margin-right: 20px;
+}
+h2{
+	text-align: left;
+	color:white;
+	top: 10px;
+	font-size: 20px;
+}
+p{
+	text-align: center;
+	color:white;
+	font-size: 30px;
+}
+
+.buscar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left:80%;
+	top: 10%;
+	transform: translate(-50%,-50%);
+	background: #069;
+	padding: 10px;
+	height: 30px;
+	border-radius: 40px;
+}
+.buscar_texto{
+	border:none;
+	background: none;
+	outline: none;
+	color: white;
+	font-size: 20px;
+	float: left;
+	line-height: 60px;
+	transition: .3s;
+	width: 0;  
+}
+.boton{
+	width: 30px;
+	height: 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+@media screen and (min-width: 480px){
+	.buscar:hover > .buscar_texto{
+      width: 190px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.buscar:hover > .buscar_texto{
+      width: 300px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.buscar:hover > .buscar_texto{
+      width: 500px;
+	}
+}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 200%;
+	
+	animation: cambios 40s infinite alternate linear;
+}
+
+.slider li {
+	width: 50%;
+	list-style: none;
+}
+
+.slider img {
+	width: 50%;
+	height: 300px;
+	object-fit: cover;
+}
+
+
+
+@keyframes cambios {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+}
+.slider1 {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider1 ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 40s infinite alternate linear;
+}
+
+.slider1 li {
+	width: 10%;
+	list-style: none;
+}
+
+.slider1 img {
+	width: 50%;
+	height: 400px;
+	object-fit: cover;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	75% {margin-left: -200%;}
+
+}
